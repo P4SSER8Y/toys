@@ -57,6 +57,7 @@ AppsKey & .:: Send {End}
 AppsKey & SC027:: Send {Home}
 AppsKey & ':: Send {PgUp}
 AppsKey & /:: Send {PgDn}
+AppsKey & p:: Send {PrintScreen}
 
 
 ;=== MISC ===
