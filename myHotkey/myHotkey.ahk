@@ -8,11 +8,7 @@ Menu,Tray,Default,restart
 Menu,Tray,Add,pause,fnPause
 Menu,Tray,Add,biu~,fnExit
 
-traytip,=?????=,Hallo Welt,10,0x1
-
-EnableDeutsch := false
-EnableLisp := false
-EnableExchangeCtrlAlt := false
+traytip,Hello,Hallo Welt,10,0x1
 
 return 
 
@@ -73,7 +69,6 @@ CAPSLOCK::ESC
 XButton1::PgDn
 XButton2::PgUp
 
-
 ;=== File Open/Save Dialog === 
 #IfWinActive ahk_class #32770
 XButton1::!Up
@@ -84,11 +79,6 @@ XButton1::!Up
 ^XButton2::^+n
 XButton1::PgDn
 XButton2::PgUp
-
-;=== Win+R ===
-#If WinActive("????") and WinActive("AHK_CLASS #32770") and WinActive("AHK_EXE explorer.exe")
-TAB::Enter
-
 
 fnRestart:
     Reload
